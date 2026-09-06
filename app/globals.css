@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --color-tierra: #d96b4b;
-  --color-bosque: #5e7764;
+  --color-tierra: #f2cb02;
+  --color-bosque: #e51c24;
   --color-arena: #f9f6f1;
   --color-blanco: #ffffff;
   --color-piedra: #2d2926;
   --color-borde: #e6e2da;
-  --color-lust: #e4201b;
+  --color-lust: #f1860b;
 
   --background: var(--color-arena);
   --foreground: var(--color-piedra);
