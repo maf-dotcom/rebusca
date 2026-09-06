@@ -73,7 +73,6 @@ body::after {
       transparent 60%
     );
 }
-}
 body::before {
   content: "";
   position: fixed;
