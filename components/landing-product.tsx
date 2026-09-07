@@ -4,18 +4,18 @@ import { LandingReveal } from "@/components/landing-reveal";
 const BENEFITS = [
   {
     n: "01",
-    title: "Un álbum por cada sitio",
-    body: "Le pones nombre, un emoji y una portada. Así reconoces de un vistazo qué viaje es cada uno.",
+    title: "Sube una foto",
+    body: "¿Viste una gráfica que te llamó la atención? Compártela.",
   },
   {
     n: "02",
-    title: "Fotos desde el móvil",
-    body: "Sacas una nueva o eliges de la galería. Solo fotos, las que de verdad quieres guardar.",
+    title: "Rebusca en tu barrio",
+    body: "Recorre tus calles y encuentra esas imágenes que hacen parte de lo cotidiano.",
   },
   {
     n: "03",
-    title: "Sin crear cuenta",
-    body: "Si tienes el enlace, puedes mirar, añadir o borrar. Está pensado para compartirlo en casa.",
+    title: "Crea el álbum",
+    body: "Tu mirada también cuenta. Cada foto ayuda a construir este archivo colectivo de nuestra gráfica popular.",
   },
 ] as const;
 
