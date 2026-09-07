@@ -4,7 +4,6 @@ import { useActionState, useEffect, useId, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { createAlbum, type CreateAlbumState } from "@/app/actions/albums";
 import { ALBUM_EMOJIS, DEFAULT_ALBUM_EMOJI } from "@/lib/album-emojis";
-import { COUNTRIES } from "@/lib/countries";
 
 const initialState: CreateAlbumState = { error: null };
 
@@ -45,7 +44,7 @@ export function CreateAlbumLauncher() {
         onClick={() => setOpen(true)}
         className="inline-flex h-12 min-h-[44px] w-full items-center justify-center rounded-full bg-tierra px-6 text-base font-semibold text-blanco shadow-sm shadow-piedra/15 transition-transform duration-150 hover:scale-[1.02] active:scale-95 sm:w-auto sm:text-sm"
       >
-        + Nuevo álbum
+        + Nueva captura
       </button>
 
       <AnimatePresence>
@@ -79,10 +78,10 @@ export function CreateAlbumLauncher() {
                       id={titleId}
                       className="text-xl font-bold text-foreground"
                     >
-                      Nuevo álbum
+                      Registra tu hallazgo
                     </h2>
                     <p className="mt-1 text-sm text-muted-foreground">
-                      Un emoji, un nombre y el país. Los tres.
+                      Un emoji, un nombre y el barrio o la ruta. Los tres.
                     </p>
                   </div>
                   <button
@@ -107,7 +106,7 @@ export function CreateAlbumLauncher() {
                   <div className="flex flex-col gap-4">
                     <div className="flex flex-col gap-1.5">
                       <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
-                        Emoji del álbum
+                        Emoji del aporte
                       </span>
                       <div className="grid grid-cols-5 gap-1.5 rounded-2xl border border-surface-border bg-arena p-2 sm:grid-cols-8 sm:gap-2 sm:p-2.5">
                         {ALBUM_EMOJIS.map((option) => (
@@ -134,7 +133,7 @@ export function CreateAlbumLauncher() {
                         htmlFor="name"
                         className="text-xs font-medium uppercase tracking-wide text-muted-foreground"
                       >
-                        Nombre del álbum
+                        Nombre o ruta del bus
                       </label>
                       <input
                         id="name"
@@ -144,7 +143,7 @@ export function CreateAlbumLauncher() {
                         maxLength={80}
                         autoComplete="off"
                         enterKeyHint="next"
-                        placeholder="Ej. Verano en Kioto"
+                        placeholder="Ej. Ruta Circunvalar, buseta amarilla"
                         className="h-12 min-h-[44px] w-full rounded-xl border border-surface-border bg-arena px-4 text-base text-foreground placeholder:text-muted-foreground/60 outline-none focus:border-tierra"
                       />
                     </div>
@@ -154,27 +153,19 @@ export function CreateAlbumLauncher() {
                         htmlFor="country_code"
                         className="text-xs font-medium uppercase tracking-wide text-muted-foreground"
                       >
-                        País
+                        Barrio o ruta
                       </label>
-                      <select
+                      <input
                         id="country_code"
                         name="country_code"
+                        type="text"
                         required
-                        defaultValue=""
-                        className="h-12 min-h-[44px] w-full appearance-none rounded-xl border border-surface-border bg-arena bg-[length:1rem] bg-[right_1rem_center] bg-no-repeat px-4 pr-10 text-base text-foreground outline-none focus:border-tierra"
-                        style={{
-                          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%237d766f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m4 6 4 4 4-4'/%3E%3C/svg%3E")`,
-                        }}
-                      >
-                        <option value="" disabled>
-                          Selecciona un país
-                        </option>
-                        {COUNTRIES.map((country) => (
-                          <option key={country.code} value={country.code}>
-                            {country.name}
-                          </option>
-                        ))}
-                      </select>
+                        maxLength={80}
+                        autoComplete="off"
+                        enterKeyHint="done"
+                        placeholder="Ej. La Circunvalar, Barranquilla"
+                        className="h-12 min-h-[44px] w-full rounded-xl border border-surface-border bg-arena px-4 text-base text-foreground placeholder:text-muted-foreground/60 outline-none focus:border-tierra"
+                      />
                     </div>
 
                     {state.error ? (
@@ -200,7 +191,7 @@ export function CreateAlbumLauncher() {
                       disabled={pending}
                       className="inline-flex h-12 min-h-[44px] w-full items-center justify-center rounded-full bg-tierra px-6 text-base font-semibold text-blanco transition-transform duration-150 hover:opacity-90 active:scale-95 disabled:opacity-60 sm:w-auto sm:text-sm"
                     >
-                      {pending ? "Creando…" : "Crear álbum"}
+                      {pending ? "Publicando…" : "Publicar"}
                     </button>
                   </div>
                 </div>
