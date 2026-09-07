@@ -26,7 +26,7 @@ export function LandingProduct() {
         <LandingReveal className="flex min-w-0 flex-col gap-8">
           <div className="flex flex-col gap-3">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-bosque">
-              Qué hay dentro
+              ¿Qué puedes hacer aquí?
             </p>
             <h2 className="text-[clamp(1.75rem,5vw,2.5rem)] font-semibold leading-tight text-piedra">
               Un álbum por cada sitio que ha pasado por la nevera.
