@@ -9,7 +9,7 @@ export function LandingFooter() {
         <div className="flex min-w-0 flex-col gap-1.5">
           <BrandLockup size="sm" href="/" />
           <p className="text-xs text-muted-foreground">
-            Tus recuerdos, a un toque.
+            Volver a mirar lo que siempre estuvo ahí.
           </p>
         </div>
 
