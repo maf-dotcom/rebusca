@@ -69,9 +69,10 @@ export function LandingHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
           >
-            Ese imán de la nevera no tiene por qué quedarse ahí quieto. Acerca
-            el móvil y salen las fotos del viaje. Para mirarlas cuando te
-            apetezca, sin buscar entre carpetas.
+            En las calles, los buses, los barrios
+            y las esquinas del Caribe existen colores, letras, 
+            historias y formas que construyen nuestra identidad.
+            
           </motion.p>
 
           <motion.div
