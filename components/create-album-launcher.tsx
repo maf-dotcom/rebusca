@@ -81,7 +81,7 @@ export function CreateAlbumLauncher() {
                       Registra tu hallazgo
                     </h2>
                     <p className="mt-1 text-sm text-muted-foreground">
-                      Un emoji, un nombre y el barrio o la ruta. Los tres.
+                      Un emoji, un nombre y dónde lo encontraste. Los tres.
                     </p>
                   </div>
                   <button
@@ -106,7 +106,7 @@ export function CreateAlbumLauncher() {
                   <div className="flex flex-col gap-4">
                     <div className="flex flex-col gap-1.5">
                       <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
-                        Emoji del aporte
+                        Emoji del hallazgo
                       </span>
                       <div className="grid grid-cols-5 gap-1.5 rounded-2xl border border-surface-border bg-arena p-2 sm:grid-cols-8 sm:gap-2 sm:p-2.5">
                         {ALBUM_EMOJIS.map((option) => (
@@ -133,7 +133,7 @@ export function CreateAlbumLauncher() {
                         htmlFor="name"
                         className="text-xs font-medium uppercase tracking-wide text-muted-foreground"
                       >
-                        Nombre o ruta del bus
+                        Qué encontraste
                       </label>
                       <input
                         id="name"
@@ -143,7 +143,7 @@ export function CreateAlbumLauncher() {
                         maxLength={80}
                         autoComplete="off"
                         enterKeyHint="next"
-                        placeholder="Ej. Ruta Circunvalar, buseta amarilla"
+                        placeholder="Ej. Letrero pintado a mano, fachada de tienda"
                         className="h-12 min-h-[44px] w-full rounded-xl border border-surface-border bg-arena px-4 text-base text-foreground placeholder:text-muted-foreground/60 outline-none focus:border-tierra"
                       />
                     </div>
@@ -153,7 +153,7 @@ export function CreateAlbumLauncher() {
                         htmlFor="country_code"
                         className="text-xs font-medium uppercase tracking-wide text-muted-foreground"
                       >
-                        Barrio o ruta
+                        Barrio o zona
                       </label>
                       <input
                         id="country_code"
@@ -163,7 +163,7 @@ export function CreateAlbumLauncher() {
                         maxLength={80}
                         autoComplete="off"
                         enterKeyHint="done"
-                        placeholder="Ej. La Circunvalar, Barranquilla"
+                        placeholder="Ej. Barrio Abajo, Barranquilla"
                         className="h-12 min-h-[44px] w-full rounded-xl border border-surface-border bg-arena px-4 text-base text-foreground placeholder:text-muted-foreground/60 outline-none focus:border-tierra"
                       />
                     </div>
