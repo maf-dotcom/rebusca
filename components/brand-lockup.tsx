@@ -32,7 +32,7 @@ export function BrandLockup({
   const s = sizeMap[size];
 
   const content = (
-    <span className="inline-flex flex-col items-start gap-1.5">
+    <span className="inline-flex flex-col items-center gap-1.5">
       <img
   src="/landing/logo.svg"
   alt="Album NFC"
