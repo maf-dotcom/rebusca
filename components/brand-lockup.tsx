@@ -36,7 +36,7 @@ export function BrandLockup({
       <img
   src="/landing/logo.svg"
   alt="Album NFC"
-  className="h-8 w-auto sm:h-10"
+className="h-12 w-auto sm:h-18"
 />
       {showTagline ? (
         <span className={`font-medium text-muted-foreground ${s.tagline}`}>
