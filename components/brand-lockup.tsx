@@ -34,7 +34,7 @@ export function BrandLockup({
   const content = (
     <span className="inline-flex flex-col items-start gap-1.5">
       <img
-  src="/logo.svg"
+  src="/landing/logo.svg"
   alt="Album NFC"
   className="h-8 w-auto sm:h-10"
 />
