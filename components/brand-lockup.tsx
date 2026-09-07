@@ -33,10 +33,11 @@ export function BrandLockup({
 
   const content = (
     <span className="inline-flex flex-col items-start gap-1.5">
-      <span className={s.wordmark} aria-label="Album NFC">
-        <span className="text-piedra">Album</span>
-        <span className="text-tierra"> NFC</span>
-      </span>
+      <img
+  src="/logo.svg"
+  alt="Album NFC"
+  className="h-8 w-auto sm:h-10"
+/>
       {showTagline ? (
         <span className={`font-medium text-muted-foreground ${s.tagline}`}>
           Tus recuerdos, a un toque.
