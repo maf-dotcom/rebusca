@@ -54,7 +54,7 @@ export function LandingHero() {
   return (
     <section className="relative px-4 pb-12 pt-[calc(1.25rem+env(safe-area-inset-top))] sm:px-8 sm:pb-24 sm:pt-12">
       <div className="mx-auto grid w-full max-w-6xl items-center gap-7 md:grid-cols-2 md:gap-14">
-        <div className="flex min-w-0 flex-col items-start gap-5 sm:gap-8">
+        <div className="flex min-w-0 flex-col items-center gap-5 sm:gap-8 text-center">
           <motion.div
             initial={reduce ? false : { opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
